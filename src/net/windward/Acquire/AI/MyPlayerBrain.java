@@ -32,18 +32,20 @@ public class MyPlayerBrain {
 	 * The name of the player.
 	 */
 	private String privateName;
+
 	public final String getName() {
 		return privateName;
 	}
+
 	private void setName(String value) {
 		privateName = value;
 	}
+
 	private static final java.util.Random rand = new java.util.Random();
+
 	public MyPlayerBrain(String name) {
 		setName(!net.windward.Acquire.DotNetToJavaStringHelper.isNullOrEmpty(name) ? name : NAME);
 	}
-
-
 
 
 	/**
@@ -154,7 +156,7 @@ public class MyPlayerBrain {
 		return best;
 	}
 
-	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains) {
+	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains, MapTile tile) {
 		for (HotelChain hotel : hotelChains) {
 			if (hotel.isActive()) {
 				return hotel;
@@ -163,13 +165,27 @@ public class MyPlayerBrain {
 		}
 	}
 
+	public MapTile mapTileConvert(GameMap map, PlayerTile tile) {
+		return map.getTiles(tile.getX(), tile.getY());
+	}
 
-	// purchase random number of shares from random hotels.\
-	if (cantBuyAtLeastThree(me) && !playedFreeStock) {
-		for (HotelStock stock : threeMostExpensiveStock()) {
+	public MapTile mapTileConvert(GameMap map, MapTile tile) {
+		return tile;
+	}
 
 
-		}
+
+
+	public boolean canBuyAtLeastThree(Player me) {
+
+		return false;
+	}
+
+	public List<HotelStock> threeMostExpensiveStock() {
+		List<HotelStock> ret = new ArrayList<HotelStock>();
+
+		return ret;
+	}
 
 	/*
 		HELLO
@@ -263,7 +279,7 @@ public class MyPlayerBrain {
 
 		// We grab an existing hotel at random in case this tile merges multiple chains.
 		// note - the survivor may not be one of the hotels merged (this is a very stupid AI)!
-		playTile.mergeSurvivor = chooseMergeSurvivor(hotelChains, playTile.tile);
+		playTile.mergeSurvivor = chooseMergeSurvivor(hotelChains, mapTileConvert(map, playTile.tile));
 
 		return playTile;
 	}
@@ -294,16 +310,16 @@ public class MyPlayerBrain {
 		turn.createdHotel = getNextBestHotelChain(hotelChains);
 
 		// keep the one you have majority in, if you have the majority in both take the one you have more stocks in
-		turn.mergeSurvivor = chooseMergeSurvivor(hotelChains, turn.tile);
+		turn.mergeSurvivor = chooseMergeSurvivor(hotelChains, mapTileConvert(map, turn.tile));
 
-		// purchase random number of shares from random hotels.\
-		if (cantBuyAtLeastThree(me) && !playedFreeStock) {
+		if (!canBuyAtLeastThree(me) && !playedFreeStock) {
 			for (HotelStock stock : threeMostExpensiveStock()) {
 				turn.setCard(SpecialPowers.CARD_FREE_3_STOCK);
 				turn.getBuy().add(stock);
 			}
 			playedFreeStock = true;
 		} else {
+			// purchase random number of shares from random hotels.\
 			turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
 			turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
 		}

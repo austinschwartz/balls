@@ -129,14 +129,19 @@
       <file leaf-file-name="MyPlayerBrain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/MyPlayerBrain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33492064">
-              <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.6904762">
+              <caret line="312" column="82" selection-start-line="312" selection-start-column="82" selection-end-line="312" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
                 <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-                <element signature="e#2716#2725#0" expanded="true" />
-                <element signature="e#3341#3353#0" expanded="true" />
+                <element signature="e#2718#2727#0" expanded="true" />
+                <element signature="e#3343#3355#0" expanded="true" />
+                <element signature="e#4433#4434#0" expanded="true" />
+                <element signature="e#4485#4486#0" expanded="true" />
+                <element signature="e#4546#4547#0" expanded="true" />
+                <element signature="e#4564#4565#0" expanded="true" />
+                <element signature="e#4730#4742#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -929,12 +934,12 @@
       <created>1357601585008</created>
       <option name="number" value="Default" />
       <updated>1357601585008</updated>
-      <workItem from="1454771056482" duration="17519000" />
+      <workItem from="1454771056482" duration="17883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17519000" />
+    <option name="totallyTimeSpent" value="17883000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1042,8 +1047,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1056,8 +1066,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1100,8 +1115,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1144,8 +1164,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1199,8 +1224,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1235,8 +1265,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1268,8 +1303,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1307,8 +1347,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1497,14 +1542,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/MyPlayerBrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33492064">
-          <caret line="167" column="51" selection-start-line="167" selection-start-column="51" selection-end-line="167" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.6904762">
+          <caret line="312" column="82" selection-start-line="312" selection-start-column="82" selection-end-line="312" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
-            <element signature="e#2716#2725#0" expanded="true" />
-            <element signature="e#3341#3353#0" expanded="true" />
+            <element signature="e#2718#2727#0" expanded="true" />
+            <element signature="e#3343#3355#0" expanded="true" />
+            <element signature="e#4433#4434#0" expanded="true" />
+            <element signature="e#4485#4486#0" expanded="true" />
+            <element signature="e#4546#4547#0" expanded="true" />
+            <element signature="e#4564#4565#0" expanded="true" />
+            <element signature="e#4730#4742#0" expanded="true" />
           </folding>
         </state>
       </provider>
