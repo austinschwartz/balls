@@ -156,14 +156,80 @@ public class MyPlayerBrain {
 		return best;
 	}
 
-	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains, MapTile tile) {
+
+	/*
+	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains, MapTile tile, GameMap map, Player me) {
+		HotelChain N = null;
+		HotelChain S = null;
+		HotelChain E = null;
+		HotelChain W = null;
+		HotelChain firstMajority = null;
+		HotelChain secondMajority = null;
+		HotelChain random = null;
+		HotelChain hotel1 = hotelChains.get(0);
+		HotelChain hotel2 = hotelChains.get(1);
+
+		if (isValidPosition(map, tile.x, tile.y + 1)) N =  map.getTiles(tile.x, tile.y + 1).getHotel();
+		if (isValidPosition(map, tile.x, tile.y + 1)) S = map.getTiles(tile.x, tile.y - 1).getHotel();
+		if (isValidPosition(map, tile.x, tile.y + 1)) E = map.getTiles(tile.x + 1, tile.y).getHotel();
+		if (isValidPosition(map, tile.x, tile.y + 1)) W = map.getTiles(tile.x - 1, tile.y).getHotel();
+		if (N != null) {
+			hotel1 = N;
+		}
+
+		if (S != null) {
+			if (hotel1 != null) {
+				hotel2 = S;
+			} else {
+				hotel1 = S;
+			}
+		}
+		if (E != null) {
+			if (hotel1 != null) {
+				hotel2 = E;
+			} else {
+				hotel1 = E;
+			}
+		}
+
+		if (W != null) {
+			if (hotel1 != null) {
+				hotel2 = W;
+			} else {
+				hotel1 = W;
+			}
+
+		}
+
+		if (hotel1.getFirstMajorityOwners().contains(me))
+			firstMajority = hotel2;
+		else if (hotel2.getFirstMajorityOwners().contains(me))
+			firstMajority = hotel1;
+
+		if (hotel1.getSecondMajorityOwners().contains(me))
+			secondMajority = hotel2;
+		else if (hotel1.getSecondMajorityOwners().contains(me))
+			secondMajority = hotel1;
+
+		if (firstMajority != null)
+			return firstMajority;
+		if (secondMajority != null)
+			return secondMajority;
+
+		return hotel1;
+	}
+	*/
+
+
+	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains, MapTile tile, GameMap map, Player me) {
 		for (HotelChain hotel : hotelChains) {
 			if (hotel.isActive()) {
 				return hotel;
-				break;
 			}
 		}
+		return hotelChains.get(0);
 	}
+
 
 	public MapTile mapTileConvert(GameMap map, PlayerTile tile) {
 		return map.getTiles(tile.getX(), tile.getY());
@@ -175,15 +241,135 @@ public class MyPlayerBrain {
 
 
 
-
-	public boolean canBuyAtLeastThree(Player me) {
+	public boolean canBuyAtLeastThree(Player me, List<HotelChain> hotelChains) {
+		if (me.getCash() > 500)
+			return true;
 
 		return false;
 	}
 
-	public List<HotelStock> threeMostExpensiveStock() {
-		List<HotelStock> ret = new ArrayList<HotelStock>();
+	public HotelChain mostExpensiveSharesHotel(List<HotelChain> hotelChains) {
+		HotelChain bestHotel = hotelChains.get(0);
+		int max = 0;
+		for (HotelChain hotel : hotelChains) {
+			if (hotel.getStockPrice() > max) {
+				max = hotel.getStockPrice();
+				bestHotel = hotel;
+			}
+		}
+		return bestHotel;
+	}
 
+	public HotelChain leastExpensiveSharesHotel(List<HotelChain> hotelChains) {
+		HotelChain bestHotel = hotelChains.get(0);
+		int min = Integer.MAX_VALUE;
+		for (HotelChain hotel : hotelChains) {
+			if (hotel.getStockPrice() < min) {
+				min = hotel.getStockPrice();
+				bestHotel = hotel;
+			}
+		}
+		return bestHotel;
+	}
+
+	public List<HotelStock> threeMostExpensiveStock(List<HotelChain> hotelChains) {
+		List<HotelChain> list = new ArrayList<HotelChain>();
+		list.addAll(hotelChains);
+
+		HotelChain firstBestHotel = mostExpensiveSharesHotel(list);
+		list.remove(firstBestHotel);
+		HotelChain secondBestHotel = mostExpensiveSharesHotel(list);
+		list.remove(secondBestHotel);
+		HotelChain thirdBestHotel = mostExpensiveSharesHotel(list);
+
+
+		List<HotelStock> ret = new ArrayList<HotelStock>();
+		if (firstBestHotel.getNumAvailableShares() >= 3) {
+			ret.add(new HotelStock(firstBestHotel, 3));
+			return ret;
+		}
+		if (firstBestHotel.getNumAvailableShares() == 2){
+			ret.add(new HotelStock(firstBestHotel, 2));
+			ret.add(new HotelStock(secondBestHotel, 1));
+			return ret;
+		}
+		if (firstBestHotel.getNumAvailableShares() == 1) {
+			if (secondBestHotel.getNumAvailableShares() >= 2) {
+				ret.add(new HotelStock(firstBestHotel, 1));
+				ret.add(new HotelStock(secondBestHotel, 2));
+			} else {
+				ret.add(new HotelStock(firstBestHotel, 1));
+				ret.add(new HotelStock(secondBestHotel, 1));
+				ret.add(new HotelStock(thirdBestHotel, 1));
+			}
+		}
+		return ret;
+	}
+
+
+	public List<HotelStock> fiveCheapestStocks(List<HotelChain> hotelChains) {
+		List<HotelChain> list = new ArrayList<HotelChain>();
+		list.addAll(hotelChains);
+
+		HotelChain firstBestHotel = leastExpensiveSharesHotel(list);
+		list.remove(firstBestHotel);
+		HotelChain secondBestHotel = leastExpensiveSharesHotel(list);
+		list.remove(secondBestHotel);
+		HotelChain thirdBestHotel = leastExpensiveSharesHotel(list);
+
+
+		List<HotelStock> ret = new ArrayList<HotelStock>();
+		if (firstBestHotel.getNumAvailableShares() >= 5) {
+			ret.add(new HotelStock(firstBestHotel, 5));
+			return ret;
+		}
+		if (firstBestHotel.getNumAvailableShares() >= 3 &&
+				secondBestHotel.getNumAvailableShares() >= 2){
+			ret.add(new HotelStock(firstBestHotel, 3));
+			ret.add(new HotelStock(secondBestHotel, 2));
+			return ret;
+		}
+		ret.add(new HotelStock(firstBestHotel, 2));
+		ret.add(new HotelStock(secondBestHotel, 2));
+		ret.add(new HotelStock(thirdBestHotel, 1));
+		return ret;
+	}
+
+	public List<HotelStock> threeCheapestStocks(List<HotelChain> hotelChains) {
+		List<HotelChain> list = new ArrayList<HotelChain>();
+		list.addAll(hotelChains);
+
+		HotelChain firstBestHotel = leastExpensiveSharesHotel(list);
+		list.remove(firstBestHotel);
+		HotelChain secondBestHotel = leastExpensiveSharesHotel(list);
+		list.remove(secondBestHotel);
+		HotelChain thirdBestHotel = leastExpensiveSharesHotel(list);
+
+
+		List<HotelStock> ret = new ArrayList<HotelStock>();
+		if (firstBestHotel.getNumAvailableShares() >= 3) {
+			ret.add(new HotelStock(firstBestHotel, 3));
+			return ret;
+		}
+		if (firstBestHotel.getNumAvailableShares() >= 2 &&
+				secondBestHotel.getNumAvailableShares() >= 1){
+			ret.add(new HotelStock(firstBestHotel, 2));
+			ret.add(new HotelStock(secondBestHotel, 1));
+			return ret;
+		}
+		if (secondBestHotel.getNumAvailableShares() >= 2 &&
+				firstBestHotel.getNumAvailableShares() >= 1){
+			ret.add(new HotelStock(secondBestHotel, 2));
+			ret.add(new HotelStock(firstBestHotel, 1));
+			return ret;
+		}
+		if (firstBestHotel.getNumAvailableShares() >= 1 &&
+				secondBestHotel.getNumAvailableShares() >= 1 &&
+				thirdBestHotel.getNumAvailableShares() >= 1) {
+			ret.add(new HotelStock(firstBestHotel, 1));
+			ret.add(new HotelStock(secondBestHotel, 1));
+			ret.add(new HotelStock(thirdBestHotel, 1));
+		}
 		return ret;
 	}
 
@@ -260,6 +446,7 @@ public class MyPlayerBrain {
 		PlayerPlayTile playTile = new PlayerPlayTile();
 
 		if (canMakeCompanies) {
+			listOfPlacesToPlayToMakeChains = getListOfPlacesToPlayToMakeChains(map, me);
 			if (listOfPlacesToPlayToMakeChains.size() > 0) {
 				PlayerTile tile = listOfPlacesToPlayToMakeChains.iterator().next();
 				listOfPlacesToPlayToMakeChains.remove(tile);
@@ -279,7 +466,7 @@ public class MyPlayerBrain {
 
 		// We grab an existing hotel at random in case this tile merges multiple chains.
 		// note - the survivor may not be one of the hotels merged (this is a very stupid AI)!
-		playTile.mergeSurvivor = chooseMergeSurvivor(hotelChains, mapTileConvert(map, playTile.tile));
+		playTile.mergeSurvivor = chooseMergeSurvivor(hotelChains, mapTileConvert(map, playTile.tile), map, me);
 
 		return playTile;
 	}
@@ -293,16 +480,21 @@ public class MyPlayerBrain {
 	 * @return The tile(s) to play and the stock to purchase (and trade if CARD.TRADE_2_STOCK is played).
 	 */
 	public PlayerTurn QueryTileAndPurchase(GameMap map, Player me, List<HotelChain> hotelChains, List<Player> players) {
-
+		boolean playedCardThisTurn = false;
+		boolean playBuy5StockCard = false;
 		PlayerTurn turn = new PlayerTurn();
+
+		listOfPlacesToPlayToMakeChains = getListOfPlacesToPlayToMakeChains(map, me);
+		if (canMakeCompanies && !playedFiveStock)
+			playBuy5StockCard = true;
 
 		if (canMakeCompanies && listOfPlacesToPlayToMakeChains.size() > 0) {
 			PlayerTile tile = listOfPlacesToPlayToMakeChains.iterator().next();
 			listOfPlacesToPlayToMakeChains.remove(tile);
 			turn.tile = tile;
 			canMakeCompanies = false;
+			playedCardThisTurn = true;
 		} else {
-			// we select a tile at random from our set
 			turn.tile = me.getTiles().size() == 0 ? null : me.getTiles().get(rand.nextInt(me.getTiles().size()));
 		}
 
@@ -310,41 +502,90 @@ public class MyPlayerBrain {
 		turn.createdHotel = getNextBestHotelChain(hotelChains);
 
 		// keep the one you have majority in, if you have the majority in both take the one you have more stocks in
-		turn.mergeSurvivor = chooseMergeSurvivor(hotelChains, mapTileConvert(map, turn.tile));
+		turn.mergeSurvivor = chooseMergeSurvivor(hotelChains, mapTileConvert(map, turn.tile), map, me);
 
-		if (!canBuyAtLeastThree(me) && !playedFreeStock) {
-			for (HotelStock stock : threeMostExpensiveStock()) {
-				turn.setCard(SpecialPowers.CARD_FREE_3_STOCK);
+		if (!canBuyAtLeastThree(me, hotelChains) && !playedFreeStock || rand.nextInt(5) == 1) {
+			turn.setCard(SpecialPowers.CARD_FREE_3_STOCK);
+			for (HotelStock stock : threeMostExpensiveStock(hotelChains)) {
 				turn.getBuy().add(stock);
 			}
 			playedFreeStock = true;
-		} else {
-			// purchase random number of shares from random hotels.\
-			turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
-			turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
-		}
-
-		if (rand.nextInt(10) != 1)
 			return turn;
-
-		// randomly occasionally play one of the cards
-		// We don't worry if we still have the card as the server will ignore trying to use a card twice.
-		switch (rand.nextInt(3)) {
-			case 0:
-				turn.setCard(SpecialPowers.CARD_BUY_5_STOCK);
-				turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 3));
-				return turn;
-			case 1:
-				turn.setCard(SpecialPowers.CARD_FREE_3_STOCK);
-				return turn;
-			default:
-				if (me.getStock().size() > 0) {
-					turn.setCard(SpecialPowers.CARD_TRADE_2_STOCK);
-					turn.getTrade().add(new PlayerTurn.TradeStock(me.getStock().get(rand.nextInt(me.getStock().size())).getChain(),
-							hotelChains.get(rand.nextInt(hotelChains.size()))));
-				}
-				return turn;
 		}
+
+		if (playBuy5StockCard && !playedFiveStock) {
+			turn.setCard(SpecialPowers.CARD_BUY_5_STOCK);
+			for (HotelStock stock : fiveCheapestStocks(hotelChains)) {
+				turn.getBuy().add(stock);
+			}
+			playedFiveStock = true;
+			return turn;
+		}
+
+
+		if (!playedTradeStock && rand.nextInt(5) == 2) {
+			HotelChain shittestHotelOfMine = null;
+			int shittestHotelOfMineCost = Integer.MAX_VALUE;
+			for (HotelStock stock : me.getStock()) {
+				if (stock.getNumShares() >= 2) {
+					HotelChain chain = stock.getChain();
+					if (chain.getStockPrice() < shittestHotelOfMineCost) {
+						shittestHotelOfMine = chain;
+						shittestHotelOfMineCost = chain.getStockPrice();
+					}
+				}
+			}
+
+			HotelChain bestHotelICanTradeFor = null;
+			int bestHotelICanTradeForCost = Integer.MAX_VALUE;
+			for (HotelChain chain : hotelChains) {
+				if (chain.getNumAvailableShares() >= 1) {
+					if (chain.getStockPrice() > bestHotelICanTradeForCost) {
+						bestHotelICanTradeFor = chain;
+						bestHotelICanTradeForCost = chain.getStockPrice();
+					}
+				}
+			}
+			if (bestHotelICanTradeFor != null && shittestHotelOfMine != null) {
+				if (bestHotelICanTradeFor.getStockPrice() >= shittestHotelOfMineCost * 2) {
+
+					turn.setCard(SpecialPowers.CARD_TRADE_2_STOCK);
+					turn.getTrade().add(
+							new PlayerTurn.TradeStock(
+									shittestHotelOfMine,
+									bestHotelICanTradeFor));
+					playedTradeStock = true;
+					return turn;
+				}
+			}
+
+		}
+
+
+
+		// purchase random number of shares from random hotels.\
+		/*
+		List<HotelStock> cheapest = threeCheapestStocks(hotelChains);
+		for (HotelStock stock : cheapest) {
+			turn.getBuy().add(stock);
+		}
+		*/
+
+		turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
+		turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
+
+		if (rand.nextInt(5) != 1)
+			return turn;
+		/*
+		if (me.getStock().size() > 0) {
+			turn.setCard(SpecialPowers.CARD_TRADE_2_STOCK);
+			turn.getTrade().add(new PlayerTurn.TradeStock(me.getStock().get(rand.nextInt(me.getStock().size())).getChain(),
+					hotelChains.get(rand.nextInt(hotelChains.size()))));
+		}
+		*/
+
+
+		return turn;
 	}
 
 	/**

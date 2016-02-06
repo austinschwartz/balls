@@ -31,7 +31,7 @@ import org.apache.log4j.*;
 public class Framework implements IPlayerCallback {
     private TcpClient tcpClient;
     private MyPlayerBrain brain;
-    private String ipAddress = "localhost";
+    private String ipAddress = "128.10.15.130";
 
     private String myGuid;
 

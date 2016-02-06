@@ -126,23 +126,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyPlayerBrain.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyPlayerBrain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/MyPlayerBrain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6904762">
-              <caret line="312" column="82" selection-start-line="312" selection-start-column="82" selection-end-line="312" selection-end-column="82" />
+            <state vertical-scroll-proportion="-291.1111">
+              <caret line="551" column="67" selection-start-line="551" selection-start-column="67" selection-end-line="551" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
                 <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
                 <element signature="e#2718#2727#0" expanded="true" />
                 <element signature="e#3343#3355#0" expanded="true" />
-                <element signature="e#4433#4434#0" expanded="true" />
-                <element signature="e#4485#4486#0" expanded="true" />
-                <element signature="e#4546#4547#0" expanded="true" />
-                <element signature="e#4564#4565#0" expanded="true" />
-                <element signature="e#4730#4742#0" expanded="true" />
+                <element signature="e#6057#6058#0" expanded="true" />
+                <element signature="e#6109#6110#0" expanded="true" />
+                <element signature="e#6170#6171#0" expanded="true" />
+                <element signature="e#6188#6189#0" expanded="true" />
+                <element signature="e#7079#7091#0" expanded="true" />
+                <element signature="e#7414#7426#0" expanded="true" />
+                <element signature="e#8220#8232#0" expanded="true" />
+                <element signature="e#8558#8570#0" expanded="true" />
+                <element signature="e#9184#9196#0" expanded="true" />
+                <element signature="e#9522#9534#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Framework.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Framework.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.41095892">
+              <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#14266#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TcpClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/TcpClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,31 +179,8 @@
         <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/PlayerTurn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="69" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="69" />
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerPlayTile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/PlayerPlayTile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#5421#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -196,8 +201,8 @@
       <file leaf-file-name="HotelChain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/HotelChain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="e#3073#3085#0" expanded="true" />
               </folding>
@@ -205,24 +210,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DotNetToJavaStringHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/DotNetToJavaStringHelper.java">
+      <file leaf-file-name="PlayerTile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/PlayerTile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StockOwner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/StockOwner.java">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
-                <element signature="e#849#850#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#0#5421#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -285,8 +290,8 @@
         <option value="$PROJECT_DIR$/src/net/windward/Acquire/Units/Player.java" />
         <option value="$PROJECT_DIR$/src/net/windward/Acquire/Units/MapTile.java" />
         <option value="$PROJECT_DIR$/src/net/windward/Acquire/Units/GameMap.java" />
-        <option value="$PROJECT_DIR$/src/net/windward/Acquire/Framework.java" />
         <option value="$PROJECT_DIR$/src/net/windward/Acquire/AI/MyPlayerBrain.java" />
+        <option value="$PROJECT_DIR$/src/net/windward/Acquire/Framework.java" />
       </list>
     </option>
   </component>
@@ -934,12 +939,12 @@
       <created>1357601585008</created>
       <option name="number" value="Default" />
       <updated>1357601585008</updated>
-      <workItem from="1454771056482" duration="17883000" />
+      <workItem from="1454771056482" duration="25080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17883000" />
+    <option name="totallyTimeSpent" value="25080000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -963,16 +968,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.325388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="886" y="488" width="458" height="354" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.325388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="886" y="488" width="458" height="354" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14800996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14800996" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22430556" sideWeight="0.6023392" order="0" side_tool="false" content_ui="combo" x="1068" y="18" width="403" height="1144" />
@@ -1049,11 +1054,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1068,11 +1078,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1101,7 +1116,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1117,11 +1132,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1150,7 +1170,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1166,11 +1186,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1199,7 +1224,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1210,7 +1235,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1226,11 +1251,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1240,7 +1270,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="287" column="0" selection-start-line="287" selection-start-column="0" selection-end-line="287" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1251,7 +1281,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="161" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1267,11 +1297,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1281,7 +1316,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="108" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1305,11 +1340,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1333,7 +1373,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="323" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1349,11 +1389,16 @@
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1363,7 +1408,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14262#0" expanded="true" />
+            <element signature="e#0#14266#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1403,14 +1448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/PlayerTile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/MapTile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1111112">
@@ -1427,30 +1464,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/TcpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/TRAP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Framework.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8888888">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#14262#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1462,13 +1480,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/DotNetToJavaStringHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/StockOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding>
-            <element signature="e#0#5421#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1495,21 +1521,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/DotNetToJavaStringHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/HotelChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="e#3073#3085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/PlayerTile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/StockOwner.java">
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#0#5421#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1517,18 +1553,8 @@
     <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/PlayerTurn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="69" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="69" />
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Units/HotelChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-          <folding>
-            <element signature="e#3073#3085#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1542,19 +1568,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/AI/MyPlayerBrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6904762">
-          <caret line="312" column="82" selection-start-line="312" selection-start-column="82" selection-end-line="312" selection-end-column="82" />
+        <state vertical-scroll-proportion="-291.1111">
+          <caret line="551" column="67" selection-start-line="551" selection-start-column="67" selection-end-line="551" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MyPlayerBrain#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="method#getAvatar#0;class#MyPlayerBrain#0" expanded="false" />
             <element signature="e#2718#2727#0" expanded="true" />
             <element signature="e#3343#3355#0" expanded="true" />
-            <element signature="e#4433#4434#0" expanded="true" />
-            <element signature="e#4485#4486#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-            <element signature="e#4564#4565#0" expanded="true" />
-            <element signature="e#4730#4742#0" expanded="true" />
+            <element signature="e#6057#6058#0" expanded="true" />
+            <element signature="e#6109#6110#0" expanded="true" />
+            <element signature="e#6170#6171#0" expanded="true" />
+            <element signature="e#6188#6189#0" expanded="true" />
+            <element signature="e#7079#7091#0" expanded="true" />
+            <element signature="e#7414#7426#0" expanded="true" />
+            <element signature="e#8220#8232#0" expanded="true" />
+            <element signature="e#8558#8570#0" expanded="true" />
+            <element signature="e#9184#9196#0" expanded="true" />
+            <element signature="e#9522#9534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/TcpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/windward/Acquire/Framework.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#14266#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
