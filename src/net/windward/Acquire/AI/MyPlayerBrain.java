@@ -156,71 +156,6 @@ public class MyPlayerBrain {
 		return best;
 	}
 
-
-	/*
-	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains, MapTile tile, GameMap map, Player me) {
-		HotelChain N = null;
-		HotelChain S = null;
-		HotelChain E = null;
-		HotelChain W = null;
-		HotelChain firstMajority = null;
-		HotelChain secondMajority = null;
-		HotelChain random = null;
-		HotelChain hotel1 = hotelChains.get(0);
-		HotelChain hotel2 = hotelChains.get(1);
-
-		if (isValidPosition(map, tile.x, tile.y + 1)) N =  map.getTiles(tile.x, tile.y + 1).getHotel();
-		if (isValidPosition(map, tile.x, tile.y + 1)) S = map.getTiles(tile.x, tile.y - 1).getHotel();
-		if (isValidPosition(map, tile.x, tile.y + 1)) E = map.getTiles(tile.x + 1, tile.y).getHotel();
-		if (isValidPosition(map, tile.x, tile.y + 1)) W = map.getTiles(tile.x - 1, tile.y).getHotel();
-		if (N != null) {
-			hotel1 = N;
-		}
-
-		if (S != null) {
-			if (hotel1 != null) {
-				hotel2 = S;
-			} else {
-				hotel1 = S;
-			}
-		}
-		if (E != null) {
-			if (hotel1 != null) {
-				hotel2 = E;
-			} else {
-				hotel1 = E;
-			}
-		}
-
-		if (W != null) {
-			if (hotel1 != null) {
-				hotel2 = W;
-			} else {
-				hotel1 = W;
-			}
-
-		}
-
-		if (hotel1.getFirstMajorityOwners().contains(me))
-			firstMajority = hotel2;
-		else if (hotel2.getFirstMajorityOwners().contains(me))
-			firstMajority = hotel1;
-
-		if (hotel1.getSecondMajorityOwners().contains(me))
-			secondMajority = hotel2;
-		else if (hotel1.getSecondMajorityOwners().contains(me))
-			secondMajority = hotel1;
-
-		if (firstMajority != null)
-			return firstMajority;
-		if (secondMajority != null)
-			return secondMajority;
-
-		return hotel1;
-	}
-	*/
-
-
 	public HotelChain chooseMergeSurvivor(List<HotelChain> hotelChains, MapTile tile, GameMap map, Player me) {
 		for (HotelChain hotel : hotelChains) {
 			if (hotel.isActive()) {
@@ -238,7 +173,6 @@ public class MyPlayerBrain {
 	public MapTile mapTileConvert(GameMap map, MapTile tile) {
 		return tile;
 	}
-
 
 
 	public boolean canBuyAtLeastThree(Player me, List<HotelChain> hotelChains) {
@@ -523,7 +457,7 @@ public class MyPlayerBrain {
 		}
 
 
-		if (!playedTradeStock && rand.nextInt(5) == 2) {
+		if (!playedTradeStock && rand.nextInt(15) == 2) {
 			HotelChain shittestHotelOfMine = null;
 			int shittestHotelOfMineCost = Integer.MAX_VALUE;
 			for (HotelStock stock : me.getStock()) {
@@ -558,32 +492,10 @@ public class MyPlayerBrain {
 					return turn;
 				}
 			}
-
 		}
-
-
-
-		// purchase random number of shares from random hotels.\
-		/*
-		List<HotelStock> cheapest = threeCheapestStocks(hotelChains);
-		for (HotelStock stock : cheapest) {
-			turn.getBuy().add(stock);
-		}
-		*/
 
 		turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
 		turn.getBuy().add(new HotelStock(hotelChains.get(rand.nextInt(hotelChains.size())), 1 + rand.nextInt(3)));
-
-		if (rand.nextInt(5) != 1)
-			return turn;
-		/*
-		if (me.getStock().size() > 0) {
-			turn.setCard(SpecialPowers.CARD_TRADE_2_STOCK);
-			turn.getTrade().add(new PlayerTurn.TradeStock(me.getStock().get(rand.nextInt(me.getStock().size())).getChain(),
-					hotelChains.get(rand.nextInt(hotelChains.size()))));
-		}
-		*/
-
 
 		return turn;
 	}
